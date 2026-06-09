@@ -11,41 +11,10 @@ A fully automated, production-grade AWS infrastructure built with Terraform Infr
 
 ## 📐 Architecture
 
-![AWS Architecture](docs/architecture.png)
 
 ### Infrastructure Overview
 
-```
-Internet Users
-      │
-      ▼
- Route 53 / DNS
-      │
-      ▼
-┌─────────────────────────────────────────────────────┐
-│                   AWS VPC (10.0.0.0/16)             │
-│                                                     │
-│  ┌──────────────────────────────────────────────┐   │
-│  │         PUBLIC SUBNETS (AZ-1a + AZ-2b)       │   │
-│  │   Internet Gateway  ←→  Application Load     │   │
-│  │   NAT Gateway            Balancer (ALB)      │   │
-│  └──────────────────────────────────────────────┘   │
-│                        │                            │
-│  ┌──────────────────────────────────────────────┐   │
-│  │        PRIVATE SUBNETS (AZ-1a + AZ-2b)       │   │
-│  │   EC2 Instance 1    EC2 Instance 2           │   │
-│  │   (Auto Scaling Group — min:2, max:5)        │   │
-│  └──────────────────────────────────────────────┘   │
-│                        │                            │
-│  ┌──────────────────────────────────────────────┐   │
-│  │        DATABASE SUBNETS (AZ-1a + AZ-2b)      │   │
-│  │   RDS MySQL Primary  ←sync→  RDS Standby     │   │
-│  └──────────────────────────────────────────────┘   │
-└─────────────────────────────────────────────────────┘
-
-Remote State: S3 Bucket + DynamoDB Lock Table
-Monitoring:   CloudWatch Alarms + IAM Roles
-```
+<img width="1536" height="1024" alt="AWS_Architecture" src="https://github.com/user-attachments/assets/6786737f-f6a4-4484-8e7c-6cf885aa53cf" />
 
 ---
 
