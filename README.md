@@ -248,7 +248,7 @@ Building this project gave me hands-on experience with:
 
 **Bharath C M**
 - GitHub: [@Bharath204-coder](https://github.com/Bharath204-coder)
-- Portfolio: [bharathcm.lovable.app](https://bharathcm.lovable.app)
+- Email: bharathcm204@gmail.com
 - Certification: AWS Certified Cloud Practitioner
 
 ---
