@@ -17,6 +17,10 @@ A fully automated, production-grade AWS infrastructure built with Terraform Infr
 <img width="1536" height="1024" alt="AWS_Architecture" src="https://github.com/user-attachments/assets/6786737f-f6a4-4484-8e7c-6cf885aa53cf" />
 
 ---
+## 🏛️ Architecture Explained
+
+This infrastructure follows a **3-tier architecture** pattern across **2 Availability Zones** for high availability.
+---
 
 ## ✅ Infrastructure Components
 
